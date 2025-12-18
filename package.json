@@ -1,0 +1,27 @@
+{
+  "name": "premiumapps",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD PremiumApps/ │ ├─ index.php                           # Landing: pilih Login / Guest ├─ checkout.php                        # Proses checkout untuk member/guest ├─ config.php                          # Loader config global ├─ composer.json ├─ .gitignore ├─ render.yml │ │ ├─ assets/ │   ├─ css/ │   │   ├─ style.css                   # UI landing + pasar │   │   └─ auth.css                    # UI login/register │   │ │   ├─ js/ │   │   ├─ main.js                     # UI + UX effect │   │   ├─ auth.js                     # Login, register handler │   │   └─ market.js                   # Logic pasar (cart, pilih produk) │   │ │   ├─ img/ │   │   ├─ logo.png │   │   └─ banners/ │   │       └─ banner_main.jpg │   │ │   └─ fonts/ │ │ ├─ config/ │   ├─ app.php                         # Judul, versi, harga base, setting umurnya │   ├─ database.php                    # Koneksi mysqli / sqlite │   └─ security.php                    # Token, salt, path penting │ │ ├─ includes/ │   ├─ header.php                      # Global header │   ├─ footer.php                      # Global footer │   ├─ navbar.php                      # Navigasi atas │   ├─ session.php                     # Session handler aman (regenerate ID) │   └─ functions.php                   # Helper: redirect(), sanitize(), etc. │ │ ├─ pages/ │   ├─ auth/ │   │   ├─ login.php                   # Login user │   │   └─ register.php                # Register (verified JSON/DB) │   │ │   ├─ market/ │   │   ├─ guest.php                   # Pasar Guest (harga normal) │   │   └─ member.php                  # Pasar Member (harga spesial 3 hari) │   │ │   ├─ product.php                     # List produk │   ├─ detail.php                      # Detail produk │   ├─ cart.php                        # Keranjang (guest/member beda harga) │   └─ success.php                     # Halaman setelah pembayaran valid │ │ ├─ storage/ │   ├─ products/                       # ZIP produk digital │   │   ├─ .htaccess                   # Proteksi agar tidak bisa diakses langsung │   │   ├─ app_premium.zip │   │   └─ addon_tools.zip │   │ │   ├─ uploads/ │   │   └─ proof/                      # Bukti pembayaran │   │ │   ├─ logs/ │   │   ├─ access.log │   │   ├─ security.log │   │   └─ hash.json                   # File integrity baseline │   │ │   ├─ config.json                     # Dibaca Python & PHP │   ├─ db/ │   │   ├─ users.json                  # Guest & users │   │   └─ transactions.json │   │ │   └─ tmp/ │       └─ token.json                  # Token download sementara │ │ ├─ api/ │   ├─ get-products.php                # API list produk │   ├─ verify.php                      # Verifikasi pembayaran │   ├─ download.php                    # Download aman token-based │   ├─ login.php                       # API login AJAX │   └─ register.php                    # API register AJAX │ │ └─ security/     ├─ __init__.py     ├─ scanner.py                      # Scan folder storage & includes     ├─ hash_validator.py               # Cocokan hash file dengan baseline     ├─ monitor.py                      # Watchdog folder (cron)     ├─ backup.py                       # Auto backup ZIP + JSON + logs     ├─ token_manager.py                # Token HMAC     ├─ alert.py                        # Kirim email jika perubahan mencurigakan     ├─ api_bridge.py                   # Bridge ke PHP via storage/config.json     ├─ firewall.py                     # Rate limit & block IP berbahaya     ├─ main_security.py                # Semua modul jalan terus     └─ requirements.txt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-was24/PremiumApps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/e-was24/PremiumApps/issues"
+  },
+  "homepage": "https://github.com/e-was24/PremiumApps#readme",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "cors": "^2.8.5",
+    "cros": "^1.1.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  }
+}
